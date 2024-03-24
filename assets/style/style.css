@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    height: 70vh;
+    
+}
+
+h4{
+    margin: 10px 0;
+}
+
+p{
+    line-height: 25px;
+}
+
+section{
+    padding: 10px 20px;
+}
+
+label{
+    display: block;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: blue;
+    position: fixed;
+    width: 100vw;
+    height: 50px;
+    top: 0;
+    box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+    z-index: 100;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 25px;
+  height: 4px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+
+
+
+
+ul{
+    background: whitesmoke;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    width: 100vw;
+    height: 20vh;
+    text-align: center;
+    z-index: 100;
+    
+}
+
+li{
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.close{
+    display: none;
+}
+
+.overlay{
+    margin-top:50px ;
+    background: url(/assets/img/0e7pz_christopher-gower-291246-unsplash.jpeg) center/cover no-repeat;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.title{
+    padding: 8px;
+    border: solid thin blue;
+    backdrop-filter: blur(20px);
+    text-shadow: 2px 2px 20px rgba(206,89,55,0);
+    z-index: 0;
+}
+
+.container{
+    text-align: justify;
+    margin: 20px;
+}
+
+
+
+h2{
+    text-transform: uppercase;
+    font-size: 1.3em;
+    text-align: center;
+    margin:20px 0 50px 0;
+}
+span{
+    width: 100%;
+    height: 1px;
+    border: solid thin black;
+}
+
+.right-part-container{
+    text-align: center;
+    margin: 70px 0;
+}
+
+.right-part-container img{
+    width: 80%;
+    height: 300px;
+}
+
+.education{
+    background: rgb(242, 242, 242);
+    padding: 10px 20px 0;
+    text-align: justify;
+    height: 100vh;
+    margin-bottom: 20px;
+    overflow: auto;
+}
+
+.lieu{
+    margin-bottom: 10px;
+}
+
+.skills{
+    margin-top: 20px;
+    min-height: 70vh;
+    background: rgb(242, 242, 242)
+}
+.skills h4{
+    margin: 20px 30px;
+}
+
+.progress{
+    width: 70vw;
+    border: solid thin grey;
+    background: gray;
+    margin: 0 30px;
+    border-radius: 3px;
+}
+.html,.css,.js,.php,.figma,.team,.communication,.adaptabilite{
+    width: 90%;
+    height: 7px;
+    background: blue;
+    animation: progress 1s ease;
+}
+
+
+@keyframes progress{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+footer{
+    height: 100vh;
+    background: rgb(242, 242, 242);
+}
+
+label{
+    text-align: left;
+    margin-left: 11%;
+}
+
+input,textarea{
+    
+    margin: 3px auto 17px;
+    display: block;
+    border: solid black thin;
+    border-radius: 2px;
+    width: 80%;
+    padding: 7px;
+}
+
+#sub{
+   display: flex;
+   justify-content: center;
+}
+
+button{
+    border: solid thin ;
+    padding: 8px;
+    border-radius: 2px;
+    width: 20%;
+    transition: 0.3s ease;
+    
+}
+
+button:hover{
+    text-transform: uppercase;
+    font-weight: bold;
+    background: green;
+}
